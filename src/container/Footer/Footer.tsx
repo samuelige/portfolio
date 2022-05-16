@@ -16,7 +16,7 @@ const Footer = () => {
 
   const { username, email, message } = formData;
 
-  const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement>): void => {
+  const handleChangeInput = (e: any): void => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
